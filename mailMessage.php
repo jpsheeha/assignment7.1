@@ -36,7 +36,7 @@ function sendMail($to, $subject, $message){
     // of our email so be sure to do that before sending it to this function 
      
     // be sure to change Your Site and yoursite to something meaningful 
-    $mailFrom = "Favorite Class Submission <noreply@favoriteclass.com>"; 
+    $mailFrom = "Pokemon Trainer Registration <noreply@pokemontrainer.com>"; 
 
     //$cc = "";   ex: $cc = "webmaster@yoursite.com"; 
     $bcc = "jpsheehan23@gmail.com"; // ex: $bcc = "youremail@yoursite.com"; 

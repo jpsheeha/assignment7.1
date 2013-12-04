@@ -454,10 +454,10 @@ $count = $stmt->rowCount();
 
             $messageA = '<h2>Thank you for registering.</h2>'; 
 
-            $messageB = "<p>Click this link to confirm your registration: "; 
+           /* $messageB = "<p>Click this link to confirm your registration: "; 
             $messageB .= '<a href="' . $baseURL . $folderPath  . 'confirmation.php?q=' . $key1 . '&amp;w=' . $key2 . '">Confirm Registration</a></p>'; 
             $messageB .= "<p>or copy and paste this url into a web browser: "; 
-            $messageB .= $baseURL . $folderPath  . 'confirmation.php?q=' . $key1 . '&amp;w=' . $key2 . "</p>"; 
+            $messageB .= $baseURL . $folderPath  . 'confirmation.php?q=' . $key1 . '&amp;w=' . $key2 . "</p>"; */
 
             $messageC .= "<p><b>Email Address:</b><i>   " . $email . "</i></p>"; 
 
@@ -472,7 +472,7 @@ if(isset($_CLEAN['POST'])) {
             // email the form's information 
             // 
              
-            $subject = "Favorite Class Registration"; 
+            $subject = "Pokemon Trainer Registration"; 
             include_once('mailMessage.php'); 
             $mailed = sendMail($email, $subject, $messageA . $messageB . $messageC . $message); 
 						
@@ -528,7 +528,7 @@ if(basename($_SERVER['PHP_SELF'])=="http://www.uvm.edu/~jpsheeha/cs148/assignmen
 <?php 
 if(isset($_POST["butSubmit"]) AND empty($errorMsg)){
 
-    print "<h1>Your Submission has ";
+    print "<h1>Your Registration has ";
 
     if (!$mailed) {
         echo "not ";
