@@ -14,14 +14,19 @@ exit();
 <body id="home">
 
 
+<section id = "headBackground">
 <? 
 include ("header.php");
 ?>
+</section>
+
+<section id = "navBackground">
 <?
 include ("nav.php");
 ?>
+</section>
 <section id="mainBody">
-<h1>Trainers</h1>
+<h2>Trainers</h2>
 <article id="main1">
 
 <p>This is a list of all the current trainers and the pokemon that they have chosen upon registering.
@@ -64,7 +69,16 @@ foreach ($users as $user) {
 
 ?>
 
-
+<!--<table border="1">
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>row 2, cell 1</td>
+<td>row 2, cell 2</td>
+</tr>
+</table>-->
 
 
 

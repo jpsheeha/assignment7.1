@@ -1,6 +1,6 @@
 <Files *>
 AuthType WebAuth
-require user jpsheeha
+require user jpsheeha kzieba rerickso
 satisfy any
 order allow,deny
 </Files>

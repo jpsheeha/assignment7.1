@@ -106,13 +106,19 @@ if (isset($_POST["butSubmit"])){
 
 <body id="home">
 
-
+<section id = "headBackground">
 <? 
 include ("header.php");
 ?>
+</section>
+
+<section id = "navBackground">
+<ol><li><a href="http://www.uvm.edu/~jpsheeha/cs148/assignment7.1/register.php">Register</a></li></ol>
+
+</section>
 
 <section id="mainBody">
-<h1>Home</h1>
+<h2>Login</h2>
 <article id="main1">
 
 
@@ -150,7 +156,7 @@ if($errorMsg){
 						
 						<label for="txtPassword" class="required">Password</label>
       <input type="password" id="txtPassword" name="txtPassword" value="<?php echo $password; ?>"
-            tabindex="110" maxlength="25" required placeholder="enter password"<?php if($firstNameERROR) echo 'class="mistake"'?>>
+            tabindex="110" maxlength="25" required placeholder="enter password"<?php if($firstNameERROR) echo 'class="mistake"'?>> <br>
 
 
                
@@ -162,14 +168,6 @@ if($errorMsg){
 </form>
 
 
-
-
-
-
-
-
-
-<p><a href="http://www.uvm.edu/~jpsheeha/cs148/assignment7.1/register.php">Register</a> </p>
 
 
 

@@ -498,10 +498,11 @@ if(isset($_CLEAN['POST'])) {
 <? include ("top.php"); ?>
 
 <body id="form">
-
+<section id = "headBackground">
 <? 
 include ("header.php");
 ?>
+</section>
 <section id = "navBackground">
 <nav>
 	<ol>
@@ -521,7 +522,7 @@ if(basename($_SERVER['PHP_SELF'])=="http://www.uvm.edu/~jpsheeha/cs148/assignmen
 </section>
 
 <section id="mainBodyForm">
-<h1>Form</h1>
+<h2>Register</h2>
 <article id="main1">
 <p>Please fill out all the fields below to complete registration.</p>
 </article>

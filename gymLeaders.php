@@ -13,18 +13,21 @@ exit();
 
 <body id="home">
 
-
+<section id = "headBackground">
 <? 
 include ("header.php");
 ?>
+</section>
+
+<section id = "navBackground">
 <?
 include ("nav.php");
 ?>
+</section>
 <section id="mainBody">
-<h1>Gym Leaders</h1>
+<h2>Gym Leaders</h2>
 <article id="main1">
 
-<p>Table of gym leaders.</p>
 
 
 
