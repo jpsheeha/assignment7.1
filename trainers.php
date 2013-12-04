@@ -24,9 +24,56 @@ include ("nav.php");
 <h1>Trainers</h1>
 <article id="main1">
 
-<p>Welcome to the Favorite Class website. Originally I was going to have the user upload some photos and have them displayed in some sort of table under the Data section of the site. But I spent around 7 hours trying figure out why uploading photos wasn't working and why I was getting tons of weird errors. In the end it seemed to be some sort of permissions issues and the UVM server did not like how I was going about uploading them. In the end I just decided to have the user enter in a bunch of information about themselves and their two favorite classes. There two favorite classes are displayed on the Data page. The site meets all requirements and it also passes w3c validation. It may not be the prettiest site but at least everything seems to be in working order. Without further ado, please go fill out the form! </p>
+<p>This is a list of all the current trainers and the pokemon that they have chosen upon registering.
 
 
+<?
+require("connect.php");
+
+
+$sql  = 'SELECT * ';
+$sql .= 'FROM tblUser';
+
+
+if ($debug) print "<p>sql ". $sql;
+
+$stmt = $db->prepare($sql);
+            
+$stmt->execute(); 
+
+$users = $stmt->fetchAll(); 
+if($debug){ print "<pre>"; print_r($users); print "</pre>";}
+
+
+
+
+
+
+
+
+
+foreach ($users as $user) {
+	//foreach($courses as $course){}
+    print nl2br("\n\n----------------------------------------------------------------------------------------------------\n" . "<table border='1'><tr><td>Trainer Name</td><td>Gender</td><td>Pokemon</td></tr><tr><td>" . $user['fldTrainerName'] . "</td><td>" . $user['fldGender'] . "</td><td><img src=" . $user['fldSpecies'] . ".png" . " " . "alt=" . $user['fldSpecies'] . "></td></tr></table>");
+}
+
+
+
+
+
+
+?>
+
+<!--<table border="1">
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>row 2, cell 1</td>
+<td>row 2, cell 2</td>
+</tr>
+</table>-->
 
 
 
