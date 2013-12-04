@@ -32,6 +32,19 @@ include ("nav.php");
 
 </article>
 
+<!-- %%%%%%%%%%%%GYM LEADER IMAGE SOURCES%%%%%%%%%% -->
+<!--
+http://cdn.bulbagarden.net/upload/1/11/VSBrock.png
+http://cdn.bulbagarden.net/upload/2/20/VSMisty.png
+http://cdn.bulbagarden.net/upload/4/46/VSLt_Surge.png
+http://cdn.bulbagarden.net/upload/5/5a/VSFalkner.png
+http://cdn.bulbagarden.net/upload/2/2a/VSBugsy.png
+http://cdn.bulbagarden.net/upload/2/27/VSWhitney.png
+http://cdn.bulbagarden.net/upload/2/22/VSValerie.png
+http://cdn.bulbagarden.net/upload/7/7f/VSOlympia.png
+http://cdn.bulbagarden.net/upload/f/f0/VSWulfric.png
+-->
+
 
 <? include ("footer.php"); ?>
 

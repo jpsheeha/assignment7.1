@@ -54,7 +54,7 @@ if($debug){ print "<pre>"; print_r($users); print "</pre>";}
 
 foreach ($users as $user) {
 	//foreach($courses as $course){}
-    print nl2br("\n\n----------------------------------------------------------------------------------------------------\n" . "<table border='1'><tr><td>Trainer Name</td><td>Gender</td><td>Pokemon</td></tr><tr><td>" . $user['fldTrainerName'] . "</td><td>" . $user['fldGender'] . "</td><td><img src=" . $user['fldSpecies'] . ".png" . " " . "alt=" . $user['fldSpecies'] . "></td></tr></table>");
+    print nl2br("<table border='1'><tr><td>Trainer Name</td><td>Gender</td><td>Pokemon</td></tr><tr><td>" . $user['fldTrainerName'] . "</td><td>" . $user['fldGender'] . "</td><td><img src=" . $user['fldSpecies'] . ".png" . " " . "alt=" . $user['fldSpecies'] . "></td></tr></table>");
 }
 
 

@@ -278,65 +278,6 @@ echo "Added data successfully\n";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Delete Record -->
 
 <?php
@@ -1214,53 +1155,6 @@ echo "Added data successfully\n";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Delete Record -->
 
 <?php
@@ -1364,7 +1258,9 @@ print '<fieldset class="listbox"><legend>Gym Leader ID</legend><select name="lst
 
 foreach ($userResult as $poke) {
     print '<option value="' . $poke['pkGymLeaderId'] . '">' .  $poke['pkGymLeaderId'] . "</option>\n";
+
 }
+
 
 print "</select>\n";
 print "</fieldset>\n";
@@ -1406,7 +1302,7 @@ print "</fieldset>\n";
 						
 									<label for="fldDescription" class="required">Description</label>
       <input type="text" id="fldDescription" name="fldDescription" value="<?php echo $description; ?>"
-            tabindex="2005" maxlength="25"> <!--required placeholder="enter your trainer name"<?php if($firstNameERROR) echo 'class="mistake"'?>>--><br>
+            tabindex="2005" maxlength="9000"> <!--required placeholder="enter your trainer name"<?php if($firstNameERROR) echo 'class="mistake"'?>>--><br>
 
 									<label for="fldGymLeaderImage" class="required">Image</label>
       <input type="text" id="fldGymLeaderImage" name="fldGymLeaderImage" value="<?php echo $gymLeaderImage; ?>"
@@ -1434,144 +1330,6 @@ print "</fieldset>\n";
 
 </fieldset>
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
