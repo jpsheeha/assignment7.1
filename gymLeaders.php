@@ -24,7 +24,46 @@ include ("nav.php");
 <h1>Gym Leaders</h1>
 <article id="main1">
 
-<p>Welcome to the Favorite Class website. Originally I was going to have the user upload some photos and have them displayed in some sort of table under the Data section of the site. But I spent around 7 hours trying figure out why uploading photos wasn't working and why I was getting tons of weird errors. In the end it seemed to be some sort of permissions issues and the UVM server did not like how I was going about uploading them. In the end I just decided to have the user enter in a bunch of information about themselves and their two favorite classes. There two favorite classes are displayed on the Data page. The site meets all requirements and it also passes w3c validation. It may not be the prettiest site but at least everything seems to be in working order. Without further ado, please go fill out the form! </p>
+<p>Table of gym leaders.</p>
+
+
+
+<?
+require("connect.php");
+
+
+$sql  = 'SELECT * ';
+$sql .= 'FROM tblGymLeaders';
+
+
+if ($debug) print "<p>sql ". $sql;
+
+$stmt = $db->prepare($sql);
+            
+$stmt->execute(); 
+
+$gymLeaders = $stmt->fetchAll(); 
+if($debug){ print "<pre>"; print_r($gymLeaders); print "</pre>";}
+
+
+
+
+
+
+
+
+
+foreach ($gymLeaders as $gym) {
+	//foreach($courses as $course){}
+    print nl2br("<table border='1'><tr><td>Region</td><td>Gym Leader Image</td><td>Gym Leader Name</td><td>Type</td><td>Badge</td><td>Location</td></tr><tr><td>" . $gym['fldRegion'] . "</td><td><img src=" . $gym['fldImage'] . " " . "alt=" . $gym['fldImage'] . "></td><td>" . $gym['fldName'] . "</td><td>" . $gym['fldType'] . "</td><td>" . $gym['fldBadge'] . "</td><td>" . $gym['fldLocation'] . "</td></tr></table>");
+}
+
+
+
+
+
+
+?>
 
 
 
