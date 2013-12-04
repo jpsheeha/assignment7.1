@@ -280,8 +280,14 @@ p {
 	text-align: center;
 	}
 	
+#form {
+	text-align: center;
+	background-color: LightGrey;
+	}
+	
 form {
 	text-align: center;
+	background-color: #FF7F50;
 	}
 
 /* footer section */
