@@ -115,6 +115,15 @@ include ("header.php");
 <h1>Home</h1>
 <article id="main1">
 
+
+<p>Please login to gain access to the website. If you have not registered click on the register link below!</p>
+
+
+
+
+
+
+
 <div id="errors">
 <?php
 if($errorMsg){

@@ -26,7 +26,7 @@ include ("nav.php");
 <h1>Home</h1>
 <article id="main1">
 
-<p>Welcome to the Favorite Class website. Originally I was going to have the user upload some photos and have them displayed in some sort of table under the Data section of the site. But I spent around 7 hours trying figure out why uploading photos wasn't working and why I was getting tons of weird errors. In the end it seemed to be some sort of permissions issues and the UVM server did not like how I was going about uploading them. In the end I just decided to have the user enter in a bunch of information about themselves and their two favorite classes. There two favorite classes are displayed on the Data page. The site meets all requirements and it also passes w3c validation. It may not be the prettiest site but at least everything seems to be in working order. Without further ado, please go fill out the form! </p>
+<p>Welcome to the Pokemon Trainer website. This website is hopefully the start of a bigger one. In the future I want to integrate a battling system, so players can fight eachother and also computers. As it stands, this site lets you register and pick your pokemon. You have to be logged in at all times in order to view the site. All the trainers are listed in the trainers page along with the pokemon they chose. There is also currently nine gym leaders in the gym leader page. The admin interface lets an admin edit the database directly from this website. They can update, delete, and into tables. All of the pages that display information update automatically if new things are inserted, deleted, or updated into the database. </p>
 
 
 

@@ -523,7 +523,7 @@ if(basename($_SERVER['PHP_SELF'])=="http://www.uvm.edu/~jpsheeha/cs148/assignmen
 <section id="mainBodyForm">
 <h1>Form</h1>
 <article id="main1">
-<p>Welcome to the Form page. On this page we would like you to fill out all the fields. By filling out these fields we can find out what peoples favorite classes are. This can be helpful in determining if teachers want to add more sections of the class and also so other students can see what other classes might be really interesting and fun to take. We have you fill out your first and last name so that we can identify you. The email lets you confirm your registration and also will provide a way for us to get in touch with you if we need to. Some of the information that you fill out here will not be displayed on the Data page. It is just here to help us get to know you better and to see if we can since a pattern in peoples decisions. Your information is really helpful and appreciated.</p>
+<p>Please fill out all the fields below to complete registration.</p>
 </article>
 <?php 
 if(isset($_POST["butSubmit"]) AND empty($errorMsg)){
