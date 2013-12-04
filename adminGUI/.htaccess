@@ -1,0 +1,6 @@
+<Files *>
+AuthType WebAuth
+require user jpsheeha
+satisfy any
+order allow,deny
+</Files>
